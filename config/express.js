@@ -24,10 +24,10 @@ module.exports = function() {
     });
 
     app.use(function(err, req, res, next) {
-        if(process.env.NOD_ENV == 'production') {
-            res.status(500).render('erros/500');
-            return;
-        }
+        // if(process.env.NOD_ENV == 'production') {
+        //     res.status(500).render('erros/500');
+        //     return;
+        // }
         next(err);
     });
 
